@@ -21,7 +21,7 @@ p {
 /* ---------------------------------------- */
 /* Components */
 
-button {
+button .cta{
     border: none;
     padding: 16px 20px;
     border-radius: 8px;
@@ -31,6 +31,17 @@ button {
     color: white;
 }
 
+button .btn:hover {
+    border: 2px solid;
+    border-color: #18382B;
+    padding: 16px 20px;
+    border-radius: 8px;
+    background: #E6F2E9;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
 /* ---------------------------------------- */
 /* Bootstrap Component Overrides */
 
@@ -38,7 +49,7 @@ button {
 
 .nav-link {
     font-family: 'Lato', sans-serif;
-    color: rgba(0, 0, 0, 0.60);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .nav-link:hover {
@@ -49,7 +60,6 @@ button {
     border-bottom: 2px solid #18382B;
     color: #18382B;
 }
-
 
 /* Carousel */
 
@@ -84,11 +94,64 @@ button {
     height: 600px;
 }
 
+.mx-auto{
+    display:block;
+    width: 200px;
+}
+
 /* Accordion */
 
 #accordion{
     margin: 5%;
-    width: 75%;
+    width: 50%;
+}
+
+.btn-link{
+    color: black; 
+    padding-top: 15px; 
+    font-size: 20px;
+}
+
+.btn-link:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* Card */
+
+.card{
+    border-radius: 150px 150px 12px 12px;
+    background-color: #f3f3f3;
+    text-align: center;
+    height: 440px;
+    border: none;
+}
+
+.card-img-top{
+    width: auto;
+    height: 320px;
+    margin: auto;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card-img-top.small{
+    height: 200px;
+}
+
+.card-text{
+    color:#18382B;
+}
+
+/* Table */
+
+table{
+    margin: 5%;
+    width: 100%;
+}
+
+.thead-dark{
+    background-color: black;
 }
 
 /* ---------------------------------------------------------------- */
@@ -97,5 +160,9 @@ button {
 .hero-image {
     height: 90vh; 
     position: relative;
-    bottom: -100px;
 }
+
+/* ---------------------------------------------------------------- */
+/* Wishlist Page */
+
+

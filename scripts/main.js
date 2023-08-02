@@ -7,7 +7,7 @@ $(document).ready(function(){
     // Home Page
 
     // When the document loads, animate the hero image upwards
-    $(".hero-image").animate({top: '-=100px'});
+    $("#hero-image").animate({top: '-=100px'});
 
     // -----------------------------------------
     // Browse Page
@@ -16,3 +16,19 @@ $(document).ready(function(){
     $("#descriptionText").hide();
 
   }); 
+  
+  //When the plant card is clicked
+  $(".card").click(function(){
+
+    //Toggle the price and description text
+    $("#descriptionText").toggle();
+    $("#priceText").toggle();
+
+    //Resize the plant image
+    $(".card-img-top").toggleClass("small");
+  })
+
+  $(document).on('click',"table .remove",function(){
+    $(this).parent().remove();
+});
+
